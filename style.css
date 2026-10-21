@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  background-color: #ffffff;
+}
+nav{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: #1a1a1a;
+}
+  ul li{
+    display: inline;
+    margin: 10px;
+    list-style: none;
+  }
+  ul li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: red;
+    font-weight: 700;
+  }
+  .listing{
+    border: 0.1px solid grey;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  a#lll{
+    color: white;
+    text-decoration: none;
+  }
+  button{
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px;
+  }
+  
+img{
+  width: 50px;
+}
+.navbar{
+  display:none;
+}
+.heading h1, .heading p{
+  text-align: center;
+}
+.heading{
+  margin-top: 50px;
+}
+.heading h1{
+  font-weight: 300;
+}
+.annualy{
+  background-color: #f5f5f5;
+  display: flex;
+  width: 145px;
+  padding: 3px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.annualy h5{
+  margin: 3px;
+  font-size: 15px;
+  padding: 5px;
+}
+.annualy h5#active{
+  background-color: white;
+}
+.price-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  row-gap: 30px;
+  column-gap: 10px;
+  
+}
+.price-cards .starter, .price-cards .pro, .price-cards .scale{
+  box-shadow: 0 3px 6px black;
+  width: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  
+}
+.price-cards h1{
+  margin-top: 20px;
+}
+.price-cards .pro{
+  background-color: #9D00FF;
+  color: white;
+}
+.price-cards .pro .pro-head{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.price-cards .pro .pro-price h1, .scale .scale-price h1{
+  display: inline;
+}
+.price-cards button.tryd{
+  display: block;
+  background-color:#F4F5FF;
+  width: 100%;
+  color: purple;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.price-cards p#list{
+  margin-top: 10px;
+}
+.price-cards button.try{
+  background-color: #fff;
+}
+
+.price-cards .starter:hover, .price-cards .pro:hover, .price-cards .scale:hover{
+  transform: scale(1.1);
+}
+
+
+  @media (max-width: 600px) {
+    .listing{
+      position: absolute;
+      top: 58px;
+      background-color: #1a1a1a;
+      border: none;
+      right: 5px;
+      border-radius:5px;
+      opacity: 0;
+      animation: fadeIn 0.4s ease;
+    }
+    ul li{
+      display: block;
+    }
+    .log{
+     margin: 0 auto;
+    }
+    .navbar{
+      display: block;
+    }
+    .navbar div{
+      height: 2px;
+      width: 30px;
+      margin: 6px;
+      background-color: white;
+    }
+  }
